@@ -13,3 +13,7 @@ body {
         background-image: url("/img/gifts_v_538.jpg");
     }
 }
+
+.jumbotron {
+    background-color: transparent;
+}
