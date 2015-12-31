@@ -1,3 +1,22 @@
-<div class="container bg-primary">
-    <h1>Test</h1>
+<div ng-controller="MyItemsController as myItems" class="container content well">
+    <div class="row">
+        <div>
+            <h1>Your Wishlist</h1>
+
+            <form name="myItemsForm" novalidate>
+                <div ng-repeat="item in myItems.items" class="form-group my_item">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-times-circle fa-fw"></i></span>
+                        <div type="text" class="my_item_text" id="my_item_{{$index}}">{{ item }}
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-times-circle fa-fw"></i></span>
+                    <input type="text" class="form-control" name="my_item_new" placeholder="Enter a new item here...">
+                </div>
+            </form>
+        </div>
+    </div>
+
 </div>

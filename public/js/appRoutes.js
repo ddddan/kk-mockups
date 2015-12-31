@@ -2,11 +2,11 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
     $routeProvider
         .when('/', {
             templateUrl: 'views/home.html',
-            controller: 'MainController'
+            controller: 'MyItemsController'
         })
-        .when('/nerds', {
-            templateUrl: 'views/nerd.html',
-            controller: 'NerdController'
+        .when('/recipient', {
+            templateUrl: 'views/recipient.html',
+            controller: 'RecipientController'
         });
 
     $locationProvider.html5Mode(true);

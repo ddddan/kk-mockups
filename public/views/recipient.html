@@ -1,0 +1,16 @@
+<div ng-controller="RecipientController as recipItems" class="container content well">
+    <div class="row">
+        <div>
+            <h1>{{ recipItems.name }}'s Wishlist</h1>
+
+            <div ng-repeat="item in recipItems.items" class="form-group my_item">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-times-circle fa-fw"></i></span>
+                    <div type="text" class="recip_item_text" id="recip_item_{{$index}}">{{ item }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,21 +1,17 @@
 var path = require('path');
-var Nerd = require('./models/nerd');
+var KKItem = require('./models/kkitem');
 
 module.exports = function (app) {
-    app.get('/api/nerds', function (req, res) {
-        Nerd.find(function (err, nerds) {
+    app.get('/api/kkitems', function (req, res) {
+        KKItem.find(function (err, items) {
             if (err) {
                 res.send(err);
             }
-            res.json(nerds);
+            res.json(items);
         });
     });
 
-    app.get('/img_test', function(req, res) {
-       res.sendFile(path.join(__dirname, '../public/views/img_test.html'));
-    });
-
-    app.get('/', function(req, res) {
+    app.get('/*', function(req, res) {
        res.sendFile(path.join(__dirname, '../public/views/index.html'));
     });
 };

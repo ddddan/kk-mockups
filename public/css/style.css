@@ -13,3 +13,34 @@ body {
         background-image: url("/img/gifts_v_538.jpg");
     }
 }
+
+/* Colour definitions - should be "lessed" later
+
+dark gold: rgb(191,137,31)
+light gold: rgb(235, 209, 124)
+cream: rgb(255,251,224)
+bronze: rgb(55,11,2)
+
+*/
+
+.content {
+    background-color: rgba(55,11,2,.8);
+    color: rgb(255,251,224);
+    padding: 6px 26px;
+}
+
+div.my_item {
+    margin-bottom: 6px;
+}
+
+div.my_item_text, div.recip_item_text {
+    margin: 5px 0 0 15px;
+}
+
+div.my_item_field {
+    padding-top: 5px;
+}
+
+div.my_item button {
+    vertical-align: middle;
+}

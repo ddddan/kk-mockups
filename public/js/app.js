@@ -1,1 +1,1 @@
-angular.module('sampleApp', ['ngRoute', 'appRoutes', 'MainCtrl', 'NerdCtrl', 'NerdService']);
+angular.module('krisKringleApp', ['ngRoute', 'appRoutes', 'MainCtrl', 'MyItemsCtrl', 'RecipientCtrl', 'KKService']);
