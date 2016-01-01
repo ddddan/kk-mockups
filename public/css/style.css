@@ -44,3 +44,9 @@ div.my_item_field {
 div.my_item button {
     vertical-align: middle;
 }
+
+button.btn-success {
+    border-color: rgb(235, 209, 124);
+    background-color: rgb(235, 209, 124);
+    color: rgb(191, 137, 31);
+}
