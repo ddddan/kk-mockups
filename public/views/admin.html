@@ -1,0 +1,39 @@
+<div ng-controller="AdminController as myAdmin" class="container content well">
+    <div class="row">
+        <div>
+            <h1>Admin</h1>
+            <div class="action-menu">
+                <button class="btn btn-default action" id="action-clear-all">Clear All</button>
+                <button class="btn btn-default action" id="action-add-user">Add User</button>
+                <button class="btn btn-default action" id="action-assign">Assign Recipients</button>
+                <button class="btn btn-default action" ng-class="btnEditUser" id="action-edit-user">Edit User</button>
+                <button class="btn btn-default action" ng-class="btnUser" id="action-disable-user">Disable User</button>
+                <button class="btn btn-default action" ng-class="btnUser" id="action-delete-user">Delete User</button>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="select" id="checkAll">
+                            <input type="checkbox">
+                        </th>
+                        <th ng-repeat="field in myAdmin.fields">
+                            {{field}}
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="user in myAdmin.data" ng-class="{'row-selected': isChecked}">
+                        <td class="select" id="{{user.data[0]}}">
+                            <input type="checkbox" ng-model="isChecked" ng-click="toggleRow(user)">
+                        </td>
+                        <td ng-repeat="value in user.data">
+                            {{value}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+</div>

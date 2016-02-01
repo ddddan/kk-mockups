@@ -11,6 +11,10 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
         .when('/recipient', {
             templateUrl: 'views/recipient.html',
             controller: 'RecipientController'
+        })
+        .when('/admin', {
+            templateUrl: 'views/admin.html',
+            controller: 'AdminController'
         });
 
     $locationProvider.html5Mode(true);

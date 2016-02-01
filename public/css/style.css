@@ -20,7 +20,7 @@ dark gold: rgb(191,137,31)
 light gold: rgb(235, 209, 124)
 cream: rgb(255,251,224)
 bronze: rgb(55,11,2)
-
+grey: rgb(127,127,127);
 */
 
 .content {
@@ -49,4 +49,12 @@ button.btn-success {
     border-color: rgb(235, 209, 124);
     background-color: rgb(235, 209, 124);
     color: rgb(191, 137, 31);
+}
+
+td.select::before, th.select::before {
+    content: "\a0 \a0"
+}
+
+tr.row-selected {
+    background-color: rgb(55,11,2);
 }

@@ -1,1 +1,1 @@
-angular.module('krisKringleApp', ['ngRoute', 'appRoutes', 'LoginCtrl', 'MainCtrl', 'MyItemsCtrl', 'RecipientCtrl', 'KKService']);
+angular.module('krisKringleApp', ['ngRoute', 'appRoutes', 'LoginCtrl', 'MainCtrl', 'MyItemsCtrl', 'RecipientCtrl', 'AdminCtrl', 'KKService']);
